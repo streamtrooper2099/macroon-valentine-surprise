@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macroon's Valentine Surprise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Welcome to Macroon's Valentine Surprise!</h1>
         </header>
-        
+
         <div class="countdown">
             <h2>Countdown to Valentine's Day:</h2>
             <div id="countdown-timer"></div>
@@ -20,8 +22,23 @@
         <div class="daily-surprise">
             <h3>Today's Surprise:</h3>
             <p id="surprise-message">Click below for your surprise!</p>
-            <button onclick="playSong()">Play Our Song</button>
-            <audio id="our-song" src="Our Song.mp3" preload="auto"></audio>
+            <button onclick="playSong(); celebrate();">Play Our Song</button>
+            <audio id="our-song" src="OUR_SONG_URL" preload="auto"></audio>
+        </div>
+
+        <div class="photo-gallery">
+            <h3>Our Memories</h3>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="image1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image3.jpg" style="width:100%">
+                </div>
+            </div>
         </div>
 
         <footer>
