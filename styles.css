@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #fff0f5;
     color: #333;
     margin: 0;
@@ -16,6 +16,7 @@ body {
 header h1 {
     font-size: 2.5em;
     color: #ff66b2;
+    font-family: 'Dancing Script', cursive;
 }
 
 h2, h3 {
@@ -40,4 +41,45 @@ footer {
     margin-top: 30px;
     font-size: 0.9em;
     color: #777;
+}
+
+.photo-gallery {
+    margin-top: 40px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#countdown-timer {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+button:focus {
+    outline: none;
 }
